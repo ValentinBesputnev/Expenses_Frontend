@@ -152,3 +152,19 @@ const totalSumm = () => {
   allExpenses.map(item => countSumm += +item.summ);
   render();
 }
+
+const onDeleteExpense = async (index) => {
+  const response = await fetch(`http://localhost:4000/deleteExpense?_id=${allExpenses[index]._id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+        "Access-Control-Allow-Origin": "*",
+      },
+    }
+  );
+  const result = await response.json();
+  allExpenses = result.data;
+  countSumm = null;
+  render();
+  totalSumm();
+};
