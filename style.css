@@ -1,0 +1,83 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #637680;
+}
+
+.main {
+  width: 50%;
+  margin: auto;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.all {
+  width: 100%;
+  display: flex;
+}
+
+.first, .second {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+#add-shop {
+  width: 320px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+#add-summ {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.addBut {
+  width: 140px;
+  height: 44px;
+  margin-top: 22px;
+  background-color: #45866a;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+}
+
+.totalSumm {
+  margin-right: 4%;
+  text-align: end;
+  font-size: 30px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+  margin-right: 2%;
+}
+
+.expense-container {
+  display: flex;
+}
+
+.shop {
+  width: 60%;
+  font-size: 25px;
+  word-wrap: break-word;
+}
+
+.date {
+  width: 30%;
+  font-size: 25px;
+}
+
+.summ {
+  width: 20%;
+  font-size: 25px;
+}
